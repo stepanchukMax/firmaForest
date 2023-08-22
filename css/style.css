@@ -1,0 +1,105 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    display: flex;
+    margin-right: auto;
+    font-style: normal;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+    border-color: aqua;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.hero-container {
+    background-image: ;
+}
+
+.header-logo {
+    margin-right: 90px;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.list {
+    list-style: none;
+}
+
+.header-list {
+    display: flex;
+    gap: 62px
+}
+
+.address-list {
+    display: flex;
+}
+
+.address-item.phone-number {
+    margin-right: 92px;
+}
+
+.change-language {
+    display: flex;
+}
+
+.change-language-text {
+    float: left;
+}
+
+.header {
+    background-color: darkolivegreen;
+}
