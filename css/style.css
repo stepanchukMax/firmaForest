@@ -25,7 +25,7 @@ ul {
 
 img {
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -40,8 +40,6 @@ img {
 .container {
     width: 1160px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     border: 1px solid;
     border-top: none;
     border-bottom: none;
@@ -56,7 +54,13 @@ img {
 }
 
 .hero-container {
-    background-image: ;
+    flex-grow: 1;
+    background-image: url(../images/background/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 133px;
+    padding-bottom: 362px;
 }
 
 .header-logo {
@@ -102,4 +106,62 @@ img {
 
 .header {
     background-color: darkolivegreen;
+}
+
+.hero-title {
+    color: white;
+    font-family: Lexend;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.hero-wrap {
+    display: flex;
+    height: 359px;
+}
+
+.hero-text-info {
+    margin-right: auto;
+}
+
+.hero-description {
+    color: white;
+    font-family: Lexend;
+    font-size: 28px;
+    width: 707px;
+}
+
+.client-info-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.for-client {
+    width: 350px;
+    height: 40px;
+}
+
+.client-name {
+    margin-bottom: 35px;
+}
+
+.client-phone {
+    margin-bottom: 50px;
+}
+
+
+/*------------------OFERTY----------------------*/
+
+.offers-item {
+    background-color: #3A6612;
+    width: 360px;
+    height: 450px;
+}
+
+.offers-title {
+    color: white;
+}
+
+.offers-list {
+    display: flex;
 }
