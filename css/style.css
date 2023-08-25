@@ -49,6 +49,8 @@ img {
     padding-bottom: 24px;
 }
 
+.main {}
+
 .hero-container {
     flex-grow: 1;
     background-image: url(../images/background/hero-bg.jpg);
