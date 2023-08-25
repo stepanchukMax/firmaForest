@@ -40,10 +40,6 @@ img {
 .container {
     width: 1160px;
     margin: 0 auto;
-    border: 1px solid;
-    border-top: none;
-    border-bottom: none;
-    border-color: aqua;
 }
 
 .header-container {
@@ -64,6 +60,7 @@ img {
 }
 
 .header-logo {
+    color: white;
     margin-right: 90px;
     font-weight: 800;
     font-size: 18px;
@@ -71,6 +68,10 @@ img {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.logo-second-word {
+    color: #3A6612;
 }
 
 .header-nav {
@@ -106,7 +107,7 @@ img {
 .address-item-link {
     color: white;
     font-family: Lexend;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -115,7 +116,8 @@ img {
 }
 
 .header {
-    background-color: darkolivegreen;
+    position: absolute;
+    width: 100%;
 }
 
 .hero-title {
@@ -146,7 +148,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 33vh;
+    height: 45vh;
 }
 
 .client-info-wrap {
@@ -169,14 +171,20 @@ img {
 
 /*------------------OFERTY----------------------*/
 
+.offers {
+    bottom: -500px;
+    position: absolute;
+    width: 100%;
+}
+
 .offers-item {
     background-color: #3A6612;
-    width: 360px;
     height: 450px;
     padding: 20px;
 }
 
 .offers-title {
+    text-align: left;
     color: white;
     font-size: 36px;
     padding-bottom: 25px;
