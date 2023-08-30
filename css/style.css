@@ -173,6 +173,7 @@ img {
     position: relative;
     margin-top: -240px;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .offers-item {
@@ -206,18 +207,173 @@ img {
 
 /*------------------O-FIRMIE----------------------*/
 
-.about-us {}
+.about-us {
+    margin-bottom: 40px;
+}
 
-.about-us-title {}
+.about-us-title {
+    font-family: Lexend;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
 
-.about-us-description {}
+.about-us-description {
+    font-family: Lexend;
+    font-size: 17px;
+}
+
+.about-us-description.top {
+    margin-bottom: 40px;
+}
 
 .about-us-photo-list {
     display: flex;
-}
-
-.about-us-photo-list :nth-child(1) {
-    margin-right: 32px;
+    gap: 32px;
+    margin-bottom: 40px;
 }
 
 .about-us-photo-item {}
+
+
+/*------------------CONTACTS----------------------*/
+
+.contact-title {
+    font-family: Lexend;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.contact-info-wrap {
+    display: flex;
+    align-items: center
+}
+
+.contact-factory-name {
+    font-weight: bold;
+}
+
+.contact {
+    font-family: Lexend;
+    font-size: 17px;
+    color: black;
+}
+
+.contact-list {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+
+.contact-item {}
+
+.contact-address {}
+
+.contact-address-link {}
+
+.link {}
+
+.contact-phones {}
+
+.contacts-phones-list {}
+
+.contacts-phones-item {}
+
+.contacts-phones-item-link {}
+
+.contact-emails {}
+
+.contacts-emails-list {}
+
+.contacts-emails-item {}
+
+.contacts-emails-item-link {}
+
+
+/*------------------FOOTER----------------------*/
+
+.footer {
+    background-color: #3A6612;
+    width: 100%;
+}
+
+.footer-logo-link {
+    color: white;
+    margin-right: 90px;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-link {
+    color: white
+}
+
+.container {}
+
+.footer-container {
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 43px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.list {}
+
+.footer-list-item {}
+
+.link {}
+
+.footer-nav {}
+
+.footer-nav-list {
+    display: flex;
+    gap: 62px;
+}
+
+.footer-nav-list-item {}
+
+.nav-item-link {
+    font-family: Lexend;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.footer-address {}
+
+.footer-address-list {}
+
+.footer-address-item {}
+
+.footer-address-item-link {
+    font-family: Lexend;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer-additional-items {}
+
+.footer-additional-items-list {
+    display: flex;
+}
+
+.footer-additional-item {}
+
+.footer-additional-item-link {}
+
+.created-by-list {
+    display: flex;
+}
+
+.created-by-item {
+    color: white;
+}
+
+.developer-link {}
