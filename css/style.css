@@ -49,16 +49,16 @@ img {
     padding-bottom: 24px;
 }
 
-.main {}
-
 .hero-container {
-    flex-grow: 1;
+    width: 1690px;
     background-image: url(../images/background/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 133px;
     padding-bottom: 362px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-logo {
@@ -70,10 +70,6 @@ img {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.logo-second-word {
-    color: #3A6612;
 }
 
 .header-nav {
@@ -132,6 +128,7 @@ img {
 .hero-wrap {
     display: flex;
     height: 359px;
+    align-items: center;
 }
 
 .hero-text-info {
@@ -150,7 +147,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45vh;
 }
 
 .client-info-wrap {
@@ -174,8 +170,8 @@ img {
 /*------------------OFERTY----------------------*/
 
 .offers {
-    bottom: -500px;
-    position: absolute;
+    position: relative;
+    margin-top: -240px;
     width: 100%;
 }
 
@@ -206,3 +202,22 @@ img {
 .offers-item-img {
     margin-bottom: 57px;
 }
+
+
+/*------------------O-FIRMIE----------------------*/
+
+.about-us {}
+
+.about-us-title {}
+
+.about-us-description {}
+
+.about-us-photo-list {
+    display: flex;
+}
+
+.about-us-photo-list :nth-child(1) {
+    margin-right: 32px;
+}
+
+.about-us-photo-item {}
