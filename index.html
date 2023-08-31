@@ -43,13 +43,13 @@
                             <svg width="13" height="13" class="phone-soc-link-header">
                                 <use href="./images/svg/icons.svg#icon-phone"></use>
                             </svg>
-                            <a class="address-item-link link " target="_blank" rel="noopener noreferrer nofollow">+48 607 450 253</a>
+                            <a href="tel:+48607450253" class="address-item-link link " target="_blank" rel="noopener noreferrer nofollow">+48 607 450 253</a>
                         </li>
                         <li class="address-item">
                             <svg width="13" height="10" class="mail-soc-link-header">
                                 <use href="./images/svg/icons.svg#icon-mail"></use>
                             </svg>
-                            <a class="address-item-link link" target="_blank" rel="noopener noreferrer nofollow">forest@forest.infoset.pl</a>
+                            <a href="mailto:forest@forest.infoset.pl" class="address-item-link link" target="_blank" rel="noopener noreferrer nofollow">forest@forest.infoset.pl</a>
                         </li>
                     </ul>
                 </address>
@@ -69,19 +69,21 @@
                     </p>
                 </div>
 
-                <div class="client-info-wrap">
-                    <ul class="client-info-list list">
-                        <li class="client-info-item">
-                            <input type="text" id="client-name" class="client-name for-client" placeholder="Imię" required name="contact-user-name" />
-                        </li>
-                        <li class="client-info-item">
-                            <input type="text" id="client-phone" class="client-phone for-client" placeholder="Numer telefonu" required name="contact-user-phone" />
-                        </li>
-                        <li class="client-info-item">
-                            <button class="send-client-info for-client">wysłać</button>
-                        </li>
-                    </ul>
-                </div>
+                <form id="tg">
+                    <div class="client-info-wrap">
+                        <ul class="client-info-list list">
+                            <li class="client-info-item">
+                                <input type="text" class="client-name for-client" placeholder="Imię" name="clientName" />
+                            </li>
+                            <li class="client-info-item">
+                                <input type="text" class="client-phone for-client" placeholder="Numer telefonu" name="clientPhone" />
+                            </li>
+                            <li class="client-info-item">
+                                <button type="submit" class="send-client-info for-client">wysłać</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -268,6 +270,29 @@
     </footer>
 
     <script src="/firmaForest/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script>
+        const TOKEN = "6415320837:AAHFvFfHJ_z6mrfEKUc50QequcTwddWMJMs";
+        const CHAT_ID = "-1001934620934";
+        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let message = `<b>Message from web site<b>\n`;
+            message += `<b>Sended by: ${this.clientName.value}<b>\n`;
+            message += `<b>Sended by: ${this.clientPhone.value}<b>\n`;
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'html'
+
+            })
+
+        })
+    </script>
+
 </body>
 
 </html>
