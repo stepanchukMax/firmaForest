@@ -1,3 +1,9 @@
+@media(prefers-reduced-motion:no-preference) {
+     :root {
+        scroll-behavior: smooth;
+    }
+}
+
 p,
 h1,
 h2,
@@ -12,7 +18,7 @@ button {
     cursor: pointer;
 }
 
-address {
+.address-header {
     display: flex;
     margin-right: auto;
     font-style: normal;
@@ -49,6 +55,14 @@ img {
     padding-bottom: 24px;
 }
 
+.phone-soc-link-header {
+    fill: white;
+}
+
+.mail-soc-link-header {
+    fill: white;
+}
+
 .hero-container {
     width: 1690px;
     background-image: url(../images/background/hero-bg.jpg);
@@ -63,7 +77,7 @@ img {
 
 .header-logo {
     color: white;
-    margin-right: 90px;
+    margin-right: 60px;
     font-weight: 800;
     font-size: 18px;
     display: flex;
@@ -87,7 +101,7 @@ img {
 
 .header-list {
     display: flex;
-    gap: 62px
+    gap: 60px
 }
 
 .address-list {
@@ -95,7 +109,7 @@ img {
 }
 
 .address-item.phone-number {
-    margin-right: 92px;
+    margin-right: 25px;
 }
 
 .change-language {
@@ -116,6 +130,8 @@ img {
 .header {
     position: absolute;
     width: 100%;
+    border-bottom: 3px solid;
+    border-color: white;
 }
 
 .hero-title {
@@ -154,16 +170,35 @@ img {
 }
 
 .for-client {
+    padding-left: 25px;
     width: 350px;
     height: 40px;
 }
 
+.for-client::placeholder {
+    padding-top: 8px;
+    padding-left: 10px;
+    color: black;
+    font-family: Lexend;
+}
+
 .client-name {
     margin-bottom: 35px;
+    outline: transparent;
 }
 
 .client-phone {
     margin-bottom: 50px;
+    outline: transparent;
+}
+
+.send-client-info.for-client {
+    background: #3A6612;
+    padding: 0px;
+    border: none;
+    font-family: Lexend;
+    color: white;
+    font-size: 20px;
 }
 
 
@@ -198,6 +233,10 @@ img {
     color: white;
     font-weight: 400;
     font-size: 24px;
+}
+
+.offers-item-link:hover {
+    text-decoration: underline;
 }
 
 .offers-item-img {
@@ -237,6 +276,10 @@ img {
 
 /*------------------CONTACTS----------------------*/
 
+.contact-section {
+    margin-bottom: 94px;
+}
+
 .contact-title {
     font-family: Lexend;
     font-size: 28px;
@@ -245,7 +288,8 @@ img {
 
 .contact-info-wrap {
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-factory-name {
@@ -266,13 +310,31 @@ img {
 
 .contact-item {}
 
-.contact-address {}
+.contact-address {
+    display: flex;
+    align-items: center;
+}
+
+.location-soc-link {
+    margin-right: 15px;
+}
+
+.phone-soc-link {
+    margin-right: 15px;
+}
+
+.mail-soc-link {
+    margin-right: 15px;
+}
 
 .contact-address-link {}
 
 .link {}
 
-.contact-phones {}
+.contact-phones {
+    display: flex;
+    align-items: center;
+}
 
 .contacts-phones-list {}
 
@@ -280,7 +342,10 @@ img {
 
 .contacts-phones-item-link {}
 
-.contact-emails {}
+.contact-emails {
+    display: flex;
+    align-items: center;
+}
 
 .contacts-emails-list {}
 
@@ -290,6 +355,12 @@ img {
 
 
 /*------------------FOOTER----------------------*/
+
+.address-footer {
+    display: flex;
+    margin-left: auto;
+    font-style: normal;
+}
 
 .footer {
     background-color: #3A6612;
@@ -322,7 +393,6 @@ img {
 .footer-list {
     display: flex;
     align-items: center;
-    margin-right: auto;
 }
 
 .list {}
@@ -361,6 +431,7 @@ img {
 .footer-additional-items {}
 
 .footer-additional-items-list {
+    justify-content: space-between;
     display: flex;
 }
 
@@ -377,3 +448,11 @@ img {
 }
 
 .developer-link {}
+
+.phone-soc-link-footer {
+    fill: white;
+}
+
+.mail-soc-link-footer {
+    fill: white;
+}
