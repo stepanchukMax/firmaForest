@@ -69,7 +69,7 @@
                     </p>
                 </div>
 
-                <form id="tg">
+                <!-- <form id="tg">
                     <div class="client-info-wrap">
                         <ul class="client-info-list list">
                             <li class="client-info-item">
@@ -83,7 +83,27 @@
                             </li>
                         </ul>
                     </div>
+                </form> -->
+
+                <form class="form" onsubmit="sendEmailTelegram(event)">
+                    <div class="form__group">
+                        
+                        <input type="text" name="name" autocomplete="off" maxlength="50" required placeholder="Imię">
+        
+                        
+                        <input type="email" name="email" autocomplete="off" maxlength="50" required placeholder="Email">
+        
+                        
+                        <input type="tel" name="phone" autocomplete="off" maxlength="15" required placeholder="Numer telefonu">
+                    </div>
+                    <div class="form__submit-block">
+                        <div class="form__submit-button">
+                            <button type="submit">Wysłać</button>
+                        </div>
+                    </div>
+                    <div class="form__send-result"></div>
                 </form>
+
             </div>
         </section>
 
@@ -269,7 +289,7 @@
         </div>
     </footer>
 
-    <script src="/firmaForest/js/script.js"></script>
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <script>
