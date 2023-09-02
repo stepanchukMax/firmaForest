@@ -64,15 +64,12 @@ img {
 }
 
 .hero-container {
-    width: 1690px;
     background-image: url(../images/background/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 133px;
     padding-bottom: 362px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .header-logo {
@@ -134,11 +131,13 @@ img {
     border-color: white;
 }
 
+
+
 .hero-title {
     color: white;
     font-family: Lexend;
-    font-size: 48px;
-    margin-bottom: 70px;
+    font-size: 32px;
+    margin-bottom: 35px;
 }
 
 .hero-wrap {
@@ -155,17 +154,20 @@ img {
 .hero-description {
     color: white;
     font-family: Lexend;
-    font-size: 28px;
+    font-size: 24px;
     width: 707px;
 }
 
-
+.form__group {
+    max-width: 300px;
+}
     
 .form__group input{
     padding-left: 25px;
     width: 350px;
     height: 40px;
     margin-bottom: 10px;
+    outline:none
 }
 
 .form__group input:last-child{
@@ -174,12 +176,12 @@ img {
 
 .form__submit-button button {
     background: #3A6612;
-    padding: 7px 0; 
+    padding: 7px 260px 7px 20px; 
     border: none;
     font-family: Lexend;
     color: white;
     font-size: 20px;
-    width: 350px;
+    
 }
 
 
