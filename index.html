@@ -152,7 +152,7 @@
             </div>
         </section>
         <section class="contact-section" id="contact">
-            <div class="container">
+            <div class="container contact-container">
                 <h2 class="contact-title">
                     Kontakt
                 </h2>
@@ -207,8 +207,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33999.86396469347!2d23.881026233628443!3d50.70036374112009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472492285fa97fe1%3A0x8c4a3491c46e2775!2sForest.%20Zak%C5%82ad%20przemys%C5%82u%20drzewnego.%20Wiatrzyk%20M.!5e0!3m2!1sru!2spl!4v1693397281552!5m2!1sru!2spl"
-                        width="700" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33999.86396469347!2d23.881026233628443!3d50.70036374112009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472492285fa97fe1%3A0x8c4a3491c46e2775!2sForest.%20Zak%C5%82ad%20przemys%C5%82u%20drzewnego.%20Wiatrzyk%20M.!5e0!3m2!1sru!2spl!4v1693397281552!5m2!1sru!2spl"></iframe>
                 </div>
             </div>
         </section>
@@ -283,28 +282,6 @@
     <script src="./js/dropdownHover.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
-    <script>
-        const TOKEN = "6515549565:AAFQKDKW_Zswu3_zQ0cocxV5Yp6Bf73-oUA";
-        const CHAT_ID = "-931136495";
-        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-        document.getElementById('tg').addEventListener('submit', function(e) {
-            e.preventDefault();
-            let message = `<b>Message from web site<b>\n`;
-            message += `<b>Sended by: ${this.clientName.value}<b>\n`;
-            message += `<b>Sended by: ${this.clientPhone.value}<b>\n`;
-
-            axios.post(URI_API, {
-                chat_id: CHAT_ID,
-                text: message,
-                parse_mode: 'html'
-
-            })
-
-        })
-    </script>
-
 </body>
 
 </html>

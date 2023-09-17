@@ -386,7 +386,7 @@ body {
         display: block;
     }
     .contact-info-wrap {
-        display: block;
+        display: inline-block !important;
     }
 }
 
@@ -474,8 +474,8 @@ body {
 
 .contact-info-wrap {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contact-factory-name {
@@ -529,7 +529,6 @@ body {
 .contacts-phones-item-link {}
 
 .contact-emails {
-    display: flex;
     align-items: center;
 }
 
@@ -538,6 +537,11 @@ body {
 .contacts-emails-item {}
 
 .contacts-emails-item-link {}
+
+.contact-info-wrap iframe {
+    max-width: 700px;
+    max-height: 340;
+}
 
 
 /*------------------FOOTER----------------------*/
