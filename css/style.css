@@ -118,12 +118,8 @@ body {
     align-items: center;
 }
 
-.header-logo-nav {
-    display: none;
-}
 
 .header-nav {
-    margin-left: 30px;
     width: 100%;
     padding: 20px 0;
     display: flex;
@@ -138,6 +134,7 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 30px;
 }
 
 .header-list {
@@ -203,15 +200,17 @@ body {
     padding: 10px;
   }
   
-  /* При наведении на .dropdown */
+ 
   .dropdown:hover .dropdown-menu {
     display: block;
   }
   
-  /* При наведении на опцию меню */
+
   .dropdown-menu li:hover {
     background-color: #f0f0f0;
   }
+
+
 
 .address-list {
     display: flex;
@@ -277,9 +276,14 @@ body {
     transform: rotate(45deg) translate(0, 50%);
 }
 @media (max-width: 900px) {
+    a{
+        size: 26px;
+    }
+
     .burger { display: flex }
 
     .header-nav {
+        align-items: start;
         display: none;
         flex-direction: column;
         position: fixed;
@@ -293,8 +297,22 @@ body {
         animation: burgerAnimation 0.4s;
     }
     .nav ul{
-        flex-direction: column;
-        row-gap: 30px;
+        display: block;
+        size: 26px;
+    }
+    .arrow-down{
+        display: none;
+    }
+    .language-list {
+        display: block;
+    }
+    .dropdown-menu {
+        padding: 20px 0;
+        display: block;
+        background-color: inherit;
+    }
+    .dropdown-menu a {
+        padding: 0;
     }
 }
 @keyframes burgerAnimation {
