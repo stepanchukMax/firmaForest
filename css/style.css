@@ -359,6 +359,8 @@ body {
 }
     
 .form__group input{
+    background-color: rgba(355, 355, 355, 0.8);
+    color: #000;
     padding-left: 25px;
     width: 350px;
     height: 40px;
